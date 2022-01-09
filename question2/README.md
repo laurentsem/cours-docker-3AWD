@@ -1,6 +1,8 @@
 ## QUESTION 2 ##
 
-`path` permet de donner le nom complet du répertoire du script peu importe d'où il est appelé.
+`path` permet de donner le nom complet du répertoire du script peu importe d'où il est appelé.  
+
+# Lancement et configuration des containers #
 
 `docker run` --> Permet de lancer un container Docker.  
 `-d` --> Permet d'exécuter le container en arrière-plan.  

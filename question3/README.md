@@ -2,7 +2,11 @@
 
 `path` --> permet de donner le nom complet du répertoire du script peu importe d'où il est appelé.  
 
+ # Création du network #
+
 `docker network create bridge` --> permet de créer un network et d'ensuite faire la liaison entre nos deux containers qui sont créer juste après.  
+
+# Lancement et configuration des containers #
 
 `docker run` --> Permet de lancer un container Docker.  
 `-d` --> Permet d'exécuter le container en arrière-plan.  

@@ -17,7 +17,7 @@ L'extension PHP Data Objects (PDO) est une excellente interface pour accéder à
 `Docker exec` va nous permettent d'executer une tache dans un container déjà lancé.  
 Dans notre cas, nous demandons au container mariadb_question4 d'excuter une script `sql.sh` qui est nécessaire au lancement de notre base de donnée puisqu'il contient les variables d'environnements. il nous permet également d'importer directement notre fichier sql.sql dans la base de donnée.  
 
-# Lancement des containers #
+# Lancement et configuration des containers #
 
 `docker run` --> Permet de lancer un container Docker.  
 

@@ -6,6 +6,14 @@
 
 `docker network create bridge` --> permet de créer un network et d'ensuite faire la liaison entre nos deux containers qui sont créer juste après.  
 
+# Connection entre Ngninx et PHP #
+
+Dans notre configuration, on lance un server proxy sur le port 80.  
+le root permet de definir le chemin, qui ici est le même que tout les fichiers dans un container PHP.  
+Enfin on y ajoute le FCGI Protocol, qui permet au proxy Ngninx créé par la configuration de faire des requête au PHP.
+Cette configuration correspond a la config par default pour lier notre container Ngninx à notre container PHP.  
+
+
 # Installions de l'extension PDO PHP et connection à la base de donnée #
 
 `tag`permet de créer une balise TARGET_IMAGE qui fait référence à une SOURCE_IMAGE. On donne ensuite le chemin de notre dockerfile .

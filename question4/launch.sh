@@ -12,6 +12,7 @@ docker run -d --rm \
     -v $path/sql:/sql \
     mariadb:10.7
 
+
 # PHP
 docker build --tag php8_custom:latest $path/php
 docker run -d --rm \
@@ -25,8 +26,10 @@ docker run -d --rm \
     --name nginx_question4 \
     --network=network_question4 \
     -p 8080:80 \
+    -v $path/nginx.conf:/etc/nginx/conf.d/default.conf \
     nginx:stable
 
-docker exec mariadb_question4 mysql --port 3306 -uroot -proot mysql < sql.sql
+echo "Access to http://localhost:8080"
 
-echo "http://localhost:8080/"
+sleep 5
+docker exec mariadb_question4 bash /sql/sql.sh

@@ -1,0 +1,1 @@
+mysql -uroot -proot < /sql/sql.sql

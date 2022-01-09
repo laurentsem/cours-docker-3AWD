@@ -7,5 +7,5 @@
 `docker run` --> Permet de lancer un container Docker.  
 `-d` --> Permet d'exécuter le container en arrière-plan.  
 `--name` --> Permet de déclarer le nom de notre container Nginx. Dans cet exemple notre container s'appel 'nginx_question1'.  
-`-p` --> Permet de définir le port sur lequel lancer notre container.
+`-p` --> Permet de définir le port sur lequel lancer notre container.  
 `-e` --> permet de définir une variable d'environnement. Dans notre cas on défini le mot de passe de MariaDB comme étant Root.  

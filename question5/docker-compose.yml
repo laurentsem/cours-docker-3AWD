@@ -1,0 +1,12 @@
+version: "3.9"  # optional since v1.27.0
+services:
+  nginx_question5:
+    image: nginx:stable-alpine
+    ports:
+      - "8080:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf
+  php_question5:
+    image: php:8-fpm
+    volumes:
+      - ./index.php:/var/www/html/index.php

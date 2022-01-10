@@ -1,7 +1,7 @@
 version: "3.9"  # optional since v1.27.0
 services:
   nginx_question6:
-    image: nginx:stable-alpine
+    image: nginx:stable
     ports:
       - "8080:80"
     volumes:
@@ -17,6 +17,6 @@ services:
     ports:
       - "3010"
     volumes:
-      - "./sql/sql.sql:/docker-entrypoint-initdb.d/sql.sql"
+      - ./sql/sql.sql:/docker-entrypoint-initdb.d/sql.sql
     env_file:
     - .env

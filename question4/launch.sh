@@ -31,5 +31,5 @@ docker run -d --rm \
 
 echo "Access to http://localhost:8080"
 
-sleep 5
+sleep 5s
 docker exec mariadb_question4 bash /sql/sql.sh
